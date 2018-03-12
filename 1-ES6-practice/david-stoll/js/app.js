@@ -29,12 +29,12 @@ function makeRandom() {
 function displayPics(){
   // roll for three random indexes
   while(viewed.length < 6){
-    var rando = makeRandom();
+    const rando = makeRandom();
     while(!viewed.includes(rando)){
       viewed.push(rando);
     }
   }
-  console.log(rando);
+  // console.log(rando);
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
   // PUT YOUR RESPONSE IN THIS COMMENT - Since variables declared by 'let' are limited to the scope in which they are defined, the 'rando' variable is limited to the scope of the while loop in which it is decalared. Because of this, the console.log of 'rando' is unable to recognize that this variable has been declared, creating an error in the console.log line 37 as well as the call for the displayPics() function in line 137.
   console.log(viewed);
