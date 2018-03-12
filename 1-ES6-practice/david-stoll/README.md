@@ -22,10 +22,10 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+I had to convert 'const' to 'let' in the allProducts array, the totalClicks counter, and for the index declaration within the for loops. The similarities that I'm seeing is that any variables that are being reassigned while the code is running are not able to be decalred using the 'const' syntax. Also, the 'i' variables in the for loops cannot be constant, as they are constantly being updated and used in multiple instances.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+It was actually quite simple once I understood the syntax of what was needing to be done. This is a much more simple process than making sure your quotations had the correct spacing to make things look as they should and I will definitely use the template literal notation going forward.
